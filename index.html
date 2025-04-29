@@ -2,14 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Deepak</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive PDF Viewer - ALEX NEWS</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    .pdf-container {
+      width: 500%;
+      height: 500vh; /* Full viewport height */
+    }
+    embed {
+      width: 500%;
+      height: 500%;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-  <iframe src="https://docs.google.com/document/d/1-AEQjpRHz-3Q4p-kdGrerBbUv7T4wS58/edit?usp=drivesdk&ouid=113693246480195225465&rtpof=true&sd=true"
-    type="application/pdf"
-    height="950px"
-    width="450px"
-  ></iframe>
+  <div class="pdf-container">
+    <iframe src="https://docs.google.com/document/d/1-AEQjpRHz-3Q4p-kdGrerBbUv7T4wS58/edit?usp=drivesdk&ouid=113693246480195225465&rtpof=true&sd=true" type="application/pdf"
+      height=50%
+      width=50%>
+    </iframe>
+  </div>
 </body>
 </html>
-
